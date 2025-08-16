@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MuseAI</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>MuseAI</h1>
+    <button id="theme-toggle" title="Toggle theme">🌓</button>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <label for="model">Model</label>
+      <select id="model"></select>
+
+      <label for="prompt">Prompt</label>
+      <textarea id="prompt" placeholder="Ask MuseAI anything..." rows="6"></textarea>
+
+      <button id="generate-btn">Generate</button>
+    </section>
+
+    <section class="card">
+      <h2>Response</h2>
+      <div id="response" class="response-box"></div>
+      <div class="feedback">
+        <button class="thumb-btn" id="thumb-up" title="Helpful">👍</button>
+        <button class="thumb-btn" id="thumb-down" title="Not helpful">👎</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Built with ❤️ — MuseAI</p>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
